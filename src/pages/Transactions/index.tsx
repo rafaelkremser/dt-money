@@ -7,6 +7,7 @@ import { TransactionsContext } from "../../contexts/TransactionsContext";
 
 export function Transactions() {
   const { transactions } = useContext(TransactionsContext)
+
   return (
     <div>
       <Header />
@@ -23,7 +24,7 @@ export function Transactions() {
                   <td width="50%">{transaction.description}</td>
                   <td>
                     <PriceHighlight variant={transaction.type}>
-                      R$ {transaction.value}
+                      R$ {transaction.price}
                     </PriceHighlight>
                   </td>
                   <td>{transaction.category}</td>

@@ -5,7 +5,7 @@
       "description": "freelance",
       "type": "income",
       "category": "Venda",
-      "value": 2000,
+      "price": 2000,
       "createdAt": "2024-09-19T13:53:09.081Z"
     },
     {
@@ -13,7 +13,7 @@
       "description": "lanche",
       "type": "outcome",
       "category": "Alimentacao",
-      "value": 50,
+      "price": 50,
       "createdAt": "2024-09-20T13:53:09.081Z"
     }
   ]

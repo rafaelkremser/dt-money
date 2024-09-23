@@ -4,7 +4,7 @@ interface Transaction {
   id: number
   description: string
   type: 'income' | 'outcome'
-  value: number
+  price: number
   category: string
   createdAt: string
 }
@@ -34,7 +34,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   }, [])
 
   return (
-    <TransactionsContext.Provider value={{ transactions }}>
+    <TransactionsContext.Provider price={{ transactions }}>
       {children}
     </TransactionsContext.Provider>
   )
